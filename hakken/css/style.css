@@ -1,0 +1,740 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400&display=swap');
+body{
+    overflow-x: hidden;
+    font-family: 'Fira Sans', sans-serif; 
+    font-weight: 300;
+    color: black;
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/paper_bg.png);
+}
+h1{
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+h2{
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    padding-top: 20px;
+}
+h3{
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 400;
+}
+img{
+    padding-top: 10px;
+}
+a:hover{
+    text-decoration-color: #ff9966;
+}
+/*--- Navigarion---*/
+.navbar{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0.9)!important;
+}
+.navbar-brand img{
+    height: 32px;
+    padding: 0;
+}
+.navbar-nav li{
+    margin-right: 10px;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: black;
+    padding-top: 12px;
+}
+
+#log{
+    border: 2px solid #ff9966;
+    border-radius: 0;
+    padding: 1px 36px;
+    margin-left: 80px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.navbar .fab {
+    padding-right: 20px;
+}
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:hover{
+    color:#ff9966;
+}
+#log.active,
+#log:hover{
+    background-color: transparent;
+}
+/*---Landing page---*/
+
+.home-inner{
+    overflow: hidden;
+    background-image: url(../img/sushi1.jpg)
+}
+.caption{
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 5%;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+.caption img{
+    height: 300px; 
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.caption p{
+    width: 50%;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding-bottom: 50px;
+    left: 50%;
+    transform: translate(50%);
+}
+.btn-sm{
+    border: 2px solid ;
+    border-color: #ff9966;
+    border-radius: 0;
+    background-color: transparent;
+    padding: 5px 20px;
+    color: rgb(15, 15, 15);
+    font-size: 16px;
+}
+.btn-sm:hover{
+    border-color: #ff9966;
+    color: #ff9966;
+    background-color: transparent;
+}
+
+/*--End landing page--*/
+
+/*--Start About page--*/
+.jumbotron{
+    background-image: url(../img/paper_bg.png);
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.jumbotron h1{
+    font-style: italic;
+}
+#about a{
+    color: #ff9966;
+    font-weight: bold;
+}
+#about .lead{
+    font-size: 16px;
+}
+.row .col-md-4{
+    padding-top: 5%;
+    padding-left: 32px;
+}
+.row .col-md-8{
+    padding-top: 5%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.col-md-4 img{
+    width: 100%;
+}
+.row .col-md-8 img:first-child{
+    width: 80%;
+    margin-left: 5%;
+}
+.row .col-md-8 img:last-child{
+    width: 80%;
+    padding-top: 7.5%;
+    margin-left: 5%;
+}
+
+/*--End About page--*/
+/*--Start recipes section--*/
+#recipes{
+    display: block;
+    overflow: hidden;
+    margin-bottom: 32px;
+}
+#recipes .col-12{
+    padding: 32px 0;
+}
+#recipes .col-12:last-child{
+    padding-bottom: 0;
+}
+#recipes .heading{
+    color: #ff9966;
+    text-shadow:  1px 1px 2px black;
+}
+.gradient{
+    position: relative;
+    height: 230px;
+
+}
+.gradient:hover img{
+    animation-duration: 2s;
+    animation-name: animate;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    mix-blend-mode:normal ;
+
+}
+@keyframes animate{
+    from{
+        transform: translateX(-90%) translateY(-50%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(-10%) translateY(-50%);
+        opacity: 1;
+    }
+}
+.gradient img{
+    width: 30%;
+    position: absolute;
+    top:50%;
+    left:10%;
+    transform: translate(-10%, -50%);
+    padding-top: 0;
+    z-index: 1;
+}
+.description-left{
+    width: 30%;
+    position: absolute;
+    left: 40%;
+    top: 20%;
+}
+.gradient .btn-sm{
+    border: 2px solid;
+    border-color: #ff9966;
+    border-radius: 0;
+    background-color: transparent;
+    padding: 5px 20px;
+    color: black;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 85%;
+    transform: translate(-85%, -50%);
+
+}
+.gradient:hover .btn-sm{
+    background-color:transparent;
+    color: #ff9966;
+    border-color: #ff9966;
+}
+.gradient1{
+    position: relative;
+    height: 230px;
+    background-position: center;
+    background-size: cover;
+}
+
+.gradient1:hover img{
+    animation-duration: 2s;
+    animation-name: animate1;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    mix-blend-mode: normal;
+}
+@keyframes animate1{
+    from{
+        transform: translateX(30%) translateY(-50%);
+        opacity: 0.5;
+    }
+    to{
+        transform: translateX(-90%) translateY(-50%);
+        opacity: 1;
+
+    }
+}
+.description-right{
+    width: 30%;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    text-align: right;
+}
+.gradient1 img{
+    width: 30%;
+    position: absolute;
+    top:50%;
+    left:90%;
+    transform: translate(-90%, -50%);
+}
+
+.gradient1 .btn-sm{
+    border: 2px solid;
+    border-color: #ff9966;
+    border-radius: 0;
+    background-color: transparent;
+    padding: 5px 20px;
+    color: black;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left:15%;
+    transform: translate(-15%, -50%);
+}
+.gradient1:hover .btn-sm{
+    background-color: transparent;
+    color: #ff9966;
+    border-color: #ff9966;
+}
+
+.row6{
+    padding-bottom: 0;
+}
+
+/*--End recipes section--*/
+/*--Start products section--*/
+
+#products .narrow{
+    height: 900px;
+}
+
+#products .fixed{
+    background-image: url(../img/products01.jpg);
+    height: 100%;
+}
+.heading{
+    color: black;
+    text-align: center;
+    text-shadow:  1px 1px 2px black;
+}
+
+.description{
+    width: 38%;
+    padding-left: 50px;
+    margin-bottom: 100px;
+}
+#products .row1{
+    width: 40%;
+    padding-top: 25px;
+}
+#products .col-12{
+    padding: 15px;
+}
+.gradient-right{
+   background-image: linear-gradient(to top right , #e6e4e4, transparent);
+}
+.gradient-right:hover{
+    background-image: linear-gradient(to top right, #e6e4e4,transparent);
+    animation-duration: 1.5s;
+    animation-name: animate2;
+    color: #ff9966;
+}
+@keyframes animate2{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+
+    }
+}
+
+.row1 a{
+    color: black;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 25px;
+}
+
+#products .row1 p{
+    margin: auto;
+    padding-left: 35px;
+}
+
+/*--End products section--*/
+/*--Start Like Japanese section--*/
+#like_japanese .narrow{
+    height: 800px;
+}
+#like_japanese .fixed1{
+    background-image: url(../img/like_japanese.jpg);
+    height: 100%;
+}
+#like_japanese .heading{
+    color: black;
+    text-align: center;
+    text-shadow:  1px 1px 2px black;
+}
+.description1{
+    position: relative;
+    left: 60%;
+    width: 38%;
+    padding-top: 50px;
+    padding-left: 50px;
+    margin-bottom: 100px;
+}
+#like_japanese .row1{
+    position: relative;
+    left: 60%;
+    width: 40%;
+    padding-top: 20px;
+}
+#like_japanese .row1 p{
+    margin: auto;
+    padding-left: 35px;
+}
+#like_japanese .col-12{
+    padding: 15px;
+}
+.gradient-left{
+    background-image: linear-gradient(to top right , #e6e4e4, transparent);
+}
+.gradient-left:hover{
+    background-image: linear-gradient(to top right, #e6e4e4, transparent);
+    animation-duration: 1s;
+    animation-name: animate2;
+    color: #ff9966;
+    text-decoration-color: #ff9966;
+}
+/*--End Like Japanese section--*/
+/*--Start LogIn section--*/
+#logIn .narrow{
+    height: 850px;
+}
+#logIn .fixed2{
+    background-image: url(../img/merch.jpg);
+}
+#logIn .heading{
+    text-align: center;
+    color: #ff9966;
+    text-shadow:  1px 1px 2px black;
+}
+#logIn .row1{
+    width: 60%;
+    padding-top: 32px;
+}
+#logIn .description{
+    margin-bottom: 0;
+}
+.description-orange a{
+    width: 40%;
+    padding-left: 50px;
+    color: #ff9966;
+    font-size: 15px;
+    display: block;
+}
+form {
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 377px;
+}
+input{
+    width: 100%;
+    padding: 10px 0 10px 10px;
+    border: 2px solid #ff9966;
+    margin-top: 20px;
+    background-color: transparent;
+}
+form input:last-child{
+    width: 40%;
+    background-color: transparent;
+    float: right;
+    padding: 5px 0 5px 0;
+}
+/*--End LogIn section--*/
+/*--Start Footer section--*/
+.footer{
+    text-align: center;
+}
+.footer h3{
+    font-size: 20px;
+    color: #999999;
+}
+.footer ul{
+    list-style: none;
+    display: flex;
+    margin: auto;
+    width: 16%;
+    padding-left: 0;
+}
+.footer li{
+    display: block;
+    float: left;
+    padding: 20px;
+}
+.footer a{
+    color: #999999;
+
+}
+hr{
+    border:1px solid black; 
+    margin: 20px;
+}
+/*--End Footer section--*/
+
+/*--Media queries--*/
+
+@media (max-width: 767px){
+    .nav-item i{
+        display: none;
+    }
+    #log{
+        width: 120px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .caption img{
+        height: 200px; 
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    .caption p{
+        font-size: 16px;
+        padding-bottom: 0;
+        margin-bottom: 10px;
+        margin-top: -14px;
+    }
+    .row .col-md-8{
+        padding-left: 25px;
+        padding-right: 0;
+    }
+    .row .col-md-4{
+        padding-left: 10px;
+    }
+    
+    .col-md-4 img{
+         width: 100%;
+    }
+    .row .col-md-8 img:first-child{
+        width: 100%;
+        margin: 0;
+    }
+    .row .col-md-8 img:last-child{
+        width: 100%;
+        margin-top: 0px;
+    }
+    .gradient{
+        width: 100%;
+        height: 180px;
+    }
+    .gradient img{
+        width: 30%;
+        left:5%;
+        transform: translate(-5%, -50%);
+    }
+    .description-left{
+        position: absolute;
+        width: 35%;
+        left: 37%;
+        top: 12%;
+        font-size: 14px;
+    }
+    .gradient .btn-sm{
+        width: 20%;
+        left: 92%;
+        padding:5px 12px;
+    }
+    .gradient1{
+        width: 100%;
+        height: 180px;
+    }
+    .gradient1 img{
+        width: 30%;
+        left: 93%;
+        padding-top: 0;
+    }
+    .description-right{
+        position: absolute;
+        width: 35%;
+        left: 27%;
+        top: 12%;
+        font-size: 14px;
+    }
+    .gradient1 .btn-sm{
+        width: 20%;
+        left: 7%;
+        top: 50%;
+        padding:5px 12px ;
+    }
+    .description{
+        margin-bottom: 38px;
+        padding-left: 30px;
+    }
+    .description1{
+        margin-bottom: 38px;
+        padding-left: 30px;
+    }
+    #like_japanese .row1 p{
+        font-size: 23px;
+    }
+    .col-12 .description{
+        width: 80%;
+        padding-left: 12px;
+    }
+    .description-orange a{
+        width: 90%;
+        padding-left: 12px;
+    }
+    input {
+        width: 100%;
+        padding-right: 12px;
+        font-size: 14px;
+    }
+    input:last-child{
+        width: 40%;
+    }
+    form {
+        width: 80%;
+        margin-left: 30px;
+    }
+    #logIn .narrow {
+        width: 100vh;
+    }
+    #logIn .row1{
+        padding-top: 32px;
+        width: 80%;
+    }
+    #logIn .fixed-wrap2{
+        left: 75%;
+        width: 100%;
+    }
+    #logIn .fixed2{
+        height: 100%;
+        width: 72%;
+        left: 48%;
+        background-position: top ;
+    }
+    .footer ul {
+        width: 27%;
+    }
+}
+@media (max-width: 500px){
+    .caption img{
+        height: 150px;
+        width: 100%;
+    }
+    .row .col-md-8 {
+        padding-left: 32px;
+    }
+    .row .col-md-8 img:last-child {
+        width: 100%;
+        margin-left: 0;
+    }
+    .gradient {
+        width: 100%;
+        height: 120px;
+    }
+    
+    .description-left{
+        position: absolute;
+        width:60%;
+        left: 37%;
+        top: 12%;
+        font-size: 10px;
+    }
+    .description-left h3{
+        font-size: 18px;
+    }
+    .gradient .btn{
+        padding: 2px 2px;
+        font-size: 10px;
+        top:80%;
+        left:70%;
+    }
+    .gradient1{
+        width: 100%;
+        height: 120px;
+    }
+    .description-right{
+        position: absolute;
+        width: 60%;
+        left: 3%;
+        top: 12%;
+        font-size: 10px;
+    }
+    .description-right h3{
+        font-size: 18px;
+    }
+    .gradient1 .btn{
+        width: 20%;
+        padding: 2px 2px;
+        font-size: 10px;
+        left: 30%;
+        top: 80%;
+    }
+    
+    .heading{
+        font-size: 30px;
+    }
+    #products .fixed{
+        left: 45%;
+        width: 55%;
+    }
+    .description{
+        width: 44%;
+        font-size: 14px;
+        padding-left: 22px;
+    }
+    #products .row1{
+        width: 45%;
+    }
+    #products .row1 p{
+        padding-left: 0;
+        text-align: left;
+    }
+    #like_japanese .fixed1{
+        width: 54%;
+    }
+    #like_japanese .row1{
+        left: 54%;
+        width: 45%;
+    }
+    #like_japanese .row1 p {
+        font-size: 16px;
+        text-align: left;
+        padding-left: 0;
+    }
+    .description1{
+        width: 45%;
+        left: 55%;
+        font-size:14px;
+        padding-left: 22px;
+    }
+    .row1 a{
+        font-size: 16px;
+        text-align: center;
+        padding: 0;
+    }
+    #logIn .col-12{
+        width: 60%;
+        padding-left: 12px;
+    }
+    .col-12 .description{
+        width: 45%;
+        font-size: 14px;
+        padding-left: 10px;
+    }
+    #logIn .fixed-wrap2{
+        left: 23%;
+    }
+    #logIn .fixed2{
+        left: 45%;
+        width: 82%;
+    }
+    .description-orange a{
+        font-size:10px;
+        padding-left: 5px;
+    }
+    form{
+        margin-left: 20px;
+        width: 45%;
+    }
+    input{
+        width: 100%;
+        padding-right:12px;
+        font-size: 12px;
+    }
+    input:last-child{
+        width: 40%;
+    }
+    .footer ul{
+        justify-content: center;
+    }
+}

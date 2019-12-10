@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400&display=swap');
+body{
+    overflow-x: hidden;
+    font-family: 'Fira Sans', sans-serif; 
+    font-weight: 300;
+    color: black;
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/paper_bg.png);
+}
+h1{
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+h2{
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 20px;
+}
+h3{
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 400;
+}
+img{
+    padding-top: 10px;
+}
+a{
+    color: black;
+}
+a:hover{
+    color: #ff9966;
+    text-decoration-color: #ff9966;
+}
+/*--- Navigarion---*/
+.navbar{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0.9)!important;
+}
+.navbar-brand img{
+    height: 32px;
+    padding: 0;
+}
+.navbar-nav li{
+    margin-right: 10px;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: black;
+    padding-top: 12px;
+}
+
+#log{
+    border: 2px solid #ff9966;
+    border-radius: 0;
+    padding: 1px 36px;
+    margin-left: 80px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.navbar .fab {
+    padding-right: 20px;
+}
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:hover{
+    color:#ff9966;
+}
+#log.active,
+#log:hover{
+    background-color: transparent;
+}
+/*---End Navigation---*/
+/*---Landing page---*/
+
+.home-inner1{
+    overflow: hidden;
+    background-image: url(../img/louis-hansel-8FWQQXMspEM-unsplash.png);
+}
+.caption{
+    max-width: 100%;
+    position: absolute;
+    top: 30%;
+    left: 1%;
+    z-index: 1;
+    justify-content: left;
+}
+/*--End landing page--*/
+/*--Start recipes section--*/
+#recipes{
+    display: block;
+    overflow: hidden;
+    margin-bottom: 32px;
+}
+#recipes .col-12{
+    padding: 32px 0;
+}
+#recipes .col-12:last-child{
+    padding-bottom: 0;
+}
+.heading{
+    margin-top: 20px;
+    color: #ff9966;
+    text-shadow:  1px 1px 2px black;
+}
+.gradient{
+    position: relative;
+    height: 230px;
+
+}
+.gradient:hover img{
+    animation-duration: 2s;
+    animation-name: animate;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    mix-blend-mode:normal ;
+
+}
+@keyframes animate{
+    from{
+        transform: translateX(-90%) translateY(-50%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(-10%) translateY(-50%);
+        opacity: 1;
+    }
+}
+.gradient img{
+    width: 30%;
+    position: absolute;
+    top:50%;
+    left:10%;
+    transform: translate(-10%, -50%);
+    padding-top: 0;
+    z-index: 1;
+}
+.description-left{
+    width: 30%;
+    position: absolute;
+    left: 40%;
+    top: 20%;
+}
+.gradient .btn-sm{
+    border: 2px solid;
+    border-color: #ff9966;
+    border-radius: 0;
+    background-color: transparent;
+    padding: 5px 20px;
+    color: black;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 85%;
+    transform: translate(-85%, -50%);
+
+}
+.gradient:hover .btn-sm{
+    background-color:transparent;
+    color: #ff9966;
+    border-color: #ff9966;
+}
+.gradient1{
+    position: relative;
+    height: 230px;
+    background-position: center;
+    background-size: cover;
+}
+
+.gradient1:hover img{
+    animation-duration: 2s;
+    animation-name: animate1;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    mix-blend-mode: normal;
+}
+@keyframes animate1{
+    from{
+        transform: translateX(30%) translateY(-50%);
+        opacity: 0.5;
+    }
+    to{
+        transform: translateX(-90%) translateY(-50%);
+        opacity: 1;
+
+    }
+}
+.description-right{
+    width: 30%;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    text-align: right;
+}
+.gradient1 img{
+    width: 30%;
+    position: absolute;
+    top:50%;
+    left:90%;
+    transform: translate(-90%, -50%);
+}
+
+.gradient1 .btn-sm{
+    border: 2px solid;
+    border-color: #ff9966;
+    border-radius: 0;
+    background-color: transparent;
+    padding: 5px 20px;
+    color: black;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left:15%;
+    transform: translate(-15%, -50%);
+}
+.gradient1:hover .btn-sm{
+    background-color: transparent;
+    color: #ff9966;
+    border-color: #ff9966;
+}
+/*--End recipes section--*/
+/*--Start Footer section--*/
+.footer{
+    text-align: center;
+}
+.footer h3{
+    font-size: 20px;
+    color: #999999;
+}
+.footer ul{
+    list-style: none;
+    display: flex;
+    margin: auto;
+    width: 16%;
+    padding-left: 0;
+}
+.footer li{
+    display: block;
+    float: left;
+    padding: 20px;
+}
+.footer a{
+    color: #999999;
+
+}
+hr{
+    border:1px solid black; 
+    margin: 20px;
+}
+/*--End Footer section--*/
+@media (max-width: 767px){
+    .nav-item i{
+        display: none;
+    }
+    #log{
+        width: 120px;
+        margin: 0;
+        text-align: center;
+    }
+    .caption h2{
+        font-size: 20px;
+        padding-top: 0;
+    }
+    .gradient{
+        width: 100%;
+        height: 180px;
+    }
+    .gradient img{
+        width: 30%;
+        left:5%;
+        transform: translate(-5%, -50%);
+    }
+    .description-left{
+        position: absolute;
+        width: 35%;
+        left: 37%;
+        top: 12%;
+        font-size: 14px;
+    }
+    h3{
+        font-size: 24px;
+    }
+    .gradient .btn-sm{
+        width: 20%;
+        left: 95%;
+        padding:5px 12px;
+    }
+    .gradient1{
+        width: 100%;
+        height: 180px;
+    }
+    .gradient1 img{
+        width: 30%;
+        left: 93%;
+        padding-top: 0;
+    }
+    .description-right{
+        position: absolute;
+        width: 35%;
+        left: 27%;
+        top: 12%;
+        font-size: 14px;
+    }
+    .gradient1 .btn-sm{
+        width: 20%;
+        left: 7%;
+        top: 50%;
+        padding:5px 12px ;
+    }
+    .footer ul {
+        width: 27%;
+    }
+
+}
+@media (max-width: 500px){
+    .home-wrap .home-inner1{
+        left: 0;
+        width: 100%;
+    }
+    .caption{
+        top: 60%;
+    }
+    .heading{
+        font-size: 30px;
+    }
+    .gradient {
+        width: 100%;
+        height: 120px;
+    }
+    .gradient img{
+        left: 5%;
+    }
+    .description-left{
+        position: absolute;
+        width:61%;
+        left: 39%;
+        top: 21%;
+        font-size: 10px;
+    }
+    .description-left h3{
+        font-size: 18px;
+    }
+    .gradient .btn{
+        padding: 2px 2px;
+        font-size: 10px;
+        top:80%;
+        left:70%;
+    }
+    .gradient1{
+        width: 100%;
+        height: 120px;
+    }
+    .gradient1 img{
+        left: 95%;
+    }
+    .description-right{
+        position: absolute;
+        width: 60%;
+        left: 3%;
+        top: 21%;
+        font-size: 10px;
+    }
+    .description-right h3{
+        font-size: 18px;
+    }
+    .gradient1 .btn{
+        width: 20%;
+        padding: 2px 2px;
+        font-size: 10px;
+        left: 30%;
+        top: 80%;
+    }
+    .footer ul {
+        width: 49%;
+    }
+}

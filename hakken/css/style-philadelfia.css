@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400&display=swap');
+body{
+    overflow-x: hidden;
+    font-family: 'Fira Sans', sans-serif; 
+    font-weight: 300;
+    color: black;
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/paper_bg.png);
+}
+h1{
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+h2{
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 20px;
+}
+h3{
+    font-family: 'Open Sans',sans-serif;
+    font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+img{
+    padding-top: 10px;
+}
+a{
+    color: black;
+}
+a:hover{
+    color: #ff9966;
+    text-decoration-color: #ff9966;
+}
+/*--- Navigarion---*/
+.navbar{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0.9)!important;
+}
+.navbar-brand img{
+    height: 32px;
+    padding: 0;
+}
+.navbar-nav li{
+    margin-right: 10px;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: black;
+    padding-top: 12px;
+}
+
+#log{
+    border: 2px solid #ff9966;
+    border-radius: 0;
+    padding: 1px 36px;
+    margin-left: 80px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.navbar .fab {
+    padding-right: 20px;
+}
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:hover{
+    color:#ff9966;
+}
+#log.active,
+#log:hover{
+    background-color: transparent;
+}
+/*---End Navigation---*/
+/*---Landing page---*/
+
+.home-inner2{
+    overflow: hidden;
+    background-image: url(../img/3383900898f9f19aa2f389d948379eb9.jpg);
+}
+.caption{
+    position: absolute;
+    top: 10%;
+    left: 1%;
+    z-index: 1;
+}
+.caption p{
+    width: 100%;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 5%; 
+    margin-bottom: 5px;
+}
+.caption img{
+    vertical-align: bottom;
+}
+/*--End landing page--*/
+/*--Start recipes section--*/
+#recipes{
+    display: block;
+    overflow: hidden;
+    margin-bottom: 32px;
+}
+#recipes .col-12{
+    padding: 32px 0;
+}
+.heading{
+    margin-top: 20px;
+    color: #ff9966;
+    text-shadow:  1px 1px 2px black;
+}
+.gradient{
+    position: relative;
+    height: 230px;
+
+}
+p{
+    margin-left: 5%;
+}
+#recipes a{
+    color: #ff9966;
+    font-weight: bold;
+}
+/*--Start Footer section--*/
+.footer{
+    text-align: center;
+}
+.footer h3{
+    font-size: 20px;
+    color: #999999;
+}
+.footer ul{
+    list-style: none;
+    display: flex;
+    margin: auto;
+    width: 16%;
+    padding-left: 0;
+}
+.footer li{
+    display: block;
+    float: left;
+    padding: 20px;
+}
+.footer a{
+    color: #999999;
+
+}
+hr{
+    border:1px solid black; 
+    margin: 20px;
+}
+/*--End Footer section--*/
+@media (max-width: 767px){
+    .nav-item i{
+        display: none;
+    }
+    #log{
+        width: 120px;
+        margin: 0;
+        text-align: center;
+    }
+    .caption{
+        width: 100%;
+        top:12%;
+    }
+    .caption h2{
+        font-size: 20px;
+        padding-top: 0;
+    }
+    .caption h3{
+        font-size: 14px;
+        padding-top:0 ;
+        padding-bottom: 0;
+    }
+    .caption p{
+        width: 100%;
+        font-size: 21px;
+        text-align: left;
+        margin-bottom: 0;
+    }
+    .caption img{
+        width: 10%;
+    }
+    .col-md-6  img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer ul {
+        width: 27%;
+    }
+}
+@media (max-width: 500px){
+    .col-{
+        padding: 0;
+    }
+    .caption{
+        width: 45%;
+        top: 7%;
+        left: -2%;
+    }
+    .caption h2{
+        font-size: 20px;
+    }
+    .caption h3{
+        font-size: 16px;
+    }
+    .caption p{
+        width: 90%;
+        font-size: 14px;
+        text-align: left;
+        margin-left: 10%; 
+    }
+    .caption img{
+        vertical-align: bottom;
+        width: 20%;
+    }
+    .heading{
+        font-size: 30px;
+    }
+    .col-md-6  img{
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer ul {
+        width: 49%;
+    }
+}
